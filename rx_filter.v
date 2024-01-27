@@ -1,4 +1,4 @@
-module rx_filter(
+module sin_filt(
           input clk,
 		input reset,
 		   input signed [17:0] x_in,
@@ -187,3 +187,4 @@ for (i=0; i<=15; i=i+1)
  b[i] =18'sd 8192; % value of 1/16
 */
 endmodule
+// module sin_filt(

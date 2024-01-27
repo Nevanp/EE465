@@ -40,7 +40,7 @@ for bet = 0.0:0.005:1
         stopband = max(abs(H_hat_tx(400:900)));
         passband = max(abs(H_hat_tx));
         atten = 20*log10(passband/stopband);
-        if atten > 44
+        if atten > 42
         MER = MER_cur;
         spec = strcat(num2str(bet),"/",num2str(kis));
         end
