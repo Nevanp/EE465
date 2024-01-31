@@ -55,7 +55,7 @@ R0
 !i10e 25
 !i10f 100
 cModel Technology
-d/home/.engr-ece/nrp211/EE465/Kickstart/simulation/modelsim
+Z1 d/home/.engr-ece/nrp211/EE465/Kickstart/simulation/modelsim
 T_opt
 !s110 1706387664
 V4XCOg<^M;3F1^:@lWVP^j0
@@ -63,160 +63,161 @@ V4XCOg<^M;3F1^:@lWVP^j0
 =19-b07b25242c3f-65b568d0-170c-92bc
 !s124 OEM10U5 
 o-quiet -auto_acc_if_foreign -work work +acc
-Z1 tCvgOpt 0
+Z2 tCvgOpt 0
 n@_opt
 OL;O;2021.2;73
+R1
 vdeliverable_1_tb
-Z2 !s110 1706387653
+Z3 !s110 1706554566
 !i10b 1
 !s100 4z7<0ZKaA2caMT9Rf]X0X0
 I39nL83d:a[I8Kn=NSe:MY0
-Z3 d/home/.engr-ece/nrp211/EE465/EE465/Deliverable_1
+Z4 d/home/.engr-ece/nrp211/EE465/EE465/Deliverable_1
 w1706385699
 8/home/.engr-ece/nrp211/EE465/EE465/Deliverable_1/deliverable_1_tb.v
 F/home/.engr-ece/nrp211/EE465/EE465/Deliverable_1/deliverable_1_tb.v
-!i122 323
+!i122 329
 L0 3 157
-Z4 VDg1SIo80bB@j0V0VzS_@n1
-Z5 OL;L;2021.2;73
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2021.2;73
 r1
 !s85 0
 31
-Z6 !s108 1706387653.000000
+Z7 !s108 1706554566.000000
 !s107 /home/.engr-ece/nrp211/EE465/EE465/Deliverable_1/deliverable_1_tb.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/.engr-ece/nrp211/EE465/EE465/Deliverable_1/deliverable_1_tb.v|
 !i113 0
-Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R1
-vdown_sampler_4
+Z8 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R2
+vdown_sampler_4
+!s110 1706554567
 !i10b 1
 !s100 `5zoE1IB3K56z9D]2^NCB1
 ILaoIh>oND5ioLZW>OoE4F3
-R3
+R4
 w1706381409
 8/home/.engr-ece/nrp211/EE465/EE465/Deliverable_1/down_sampler_4.v
 F/home/.engr-ece/nrp211/EE465/EE465/Deliverable_1/down_sampler_4.v
-!i122 328
+!i122 334
 L0 1 32
-R4
 R5
+R6
 r1
 !s85 0
 31
-R6
+R7
 !s107 /home/.engr-ece/nrp211/EE465/EE465/Deliverable_1/down_sampler_4.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/.engr-ece/nrp211/EE465/EE465/Deliverable_1/down_sampler_4.v|
 !i113 0
-R7
-R1
+R8
+R2
 vrx_filter
 !s110 1706382434
 !i10b 1
 !s100 1f`Cac9Xb>b4_2Ob2l?FB2
 IbWT^XBEQUTfM72WZ8IIJg3
-R3
+R4
 w1706382429
-Z8 8/home/.engr-ece/nrp211/EE465/EE465/Deliverable_1/rx_filter.v
-Z9 F/home/.engr-ece/nrp211/EE465/EE465/Deliverable_1/rx_filter.v
+Z9 8/home/.engr-ece/nrp211/EE465/EE465/Deliverable_1/rx_filter.v
+Z10 F/home/.engr-ece/nrp211/EE465/EE465/Deliverable_1/rx_filter.v
 !i122 254
 L0 1 198
-R4
 R5
+R6
 r1
 !s85 0
 31
 !s108 1706382434.000000
-Z10 !s107 /home/.engr-ece/nrp211/EE465/EE465/Deliverable_1/rx_filter.v|
-Z11 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/.engr-ece/nrp211/EE465/EE465/Deliverable_1/rx_filter.v|
+Z11 !s107 /home/.engr-ece/nrp211/EE465/EE465/Deliverable_1/rx_filter.v|
+Z12 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/.engr-ece/nrp211/EE465/EE465/Deliverable_1/rx_filter.v|
 !i113 0
-R7
-R1
-vsin_filt
+R8
 R2
+vsin_filt
+R3
 !i10b 1
 !s100 oXR;IYl:QON<I6I4957;[1
 I]C[l@hc`8RMa5F3zKn]OB0
-R3
-w1706382807
-R8
-R9
-!i122 325
-Z12 L0 1 189
 R4
+w1706382807
+R9
+R10
+!i122 331
+Z13 L0 1 189
 R5
+R6
 r1
 !s85 0
 31
-R6
-R10
-R11
-!i113 0
 R7
-R1
-vtx_filter
+R11
+R12
+!i113 0
+R8
 R2
+vtx_filter
+R3
 !i10b 1
 !s100 _:DJ6YWn@ZUWnh=S3glzH0
 IQiW;bC:hLN`_IDLble9^m1
-R3
+R4
 w1706124304
 8/home/.engr-ece/nrp211/EE465/EE465/Deliverable_1/tx_filter.v
 F/home/.engr-ece/nrp211/EE465/EE465/Deliverable_1/tx_filter.v
-!i122 324
-R12
-R4
+!i122 330
+R13
 R5
+R6
 r1
 !s85 0
 31
-R6
+R7
 !s107 /home/.engr-ece/nrp211/EE465/EE465/Deliverable_1/tx_filter.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/.engr-ece/nrp211/EE465/EE465/Deliverable_1/tx_filter.v|
 !i113 0
-R7
-R1
-vtx_filter_nomult
+R8
 R2
+vtx_filter_nomult
+R3
 !i10b 1
 !s100 iL6mXATMUiCJ1BK`3lJh:0
 IkO^gE68`Ia229loZI]jI;1
-R3
-w1706387647
+R4
+w1706388077
 8/home/.engr-ece/nrp211/EE465/EE465/Deliverable_1/tx_filter_nomult.v
 F/home/.engr-ece/nrp211/EE465/EE465/Deliverable_1/tx_filter_nomult.v
-!i122 326
+!i122 332
 L0 1 339
-R4
 R5
+R6
 r1
 !s85 0
 31
-R6
+R7
 !s107 /home/.engr-ece/nrp211/EE465/EE465/Deliverable_1/tx_filter_nomult.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/.engr-ece/nrp211/EE465/EE465/Deliverable_1/tx_filter_nomult.v|
 !i113 0
-R7
-R1
-vup_sampler_4
+R8
 R2
+vup_sampler_4
+R3
 !i10b 1
 !s100 3k`WUf9[MG>hdMfIz327m2
 I[AB5gknCc5`SGBKJkQEb33
-R3
+R4
 w1706111510
 8/home/.engr-ece/nrp211/EE465/EE465/Deliverable_1/up_sampler_4.v
 F/home/.engr-ece/nrp211/EE465/EE465/Deliverable_1/up_sampler_4.v
-!i122 327
+!i122 333
 L0 1 33
-R4
 R5
+R6
 r1
 !s85 0
 31
-R6
+R7
 !s107 /home/.engr-ece/nrp211/EE465/EE465/Deliverable_1/up_sampler_4.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/.engr-ece/nrp211/EE465/EE465/Deliverable_1/up_sampler_4.v|
 !i113 0
-R7
-R1
+R8
+R2
