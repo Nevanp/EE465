@@ -70,52 +70,52 @@ else
 
 end
 
-// input data
-integer file_in;
+//input data
+// integer file_in;
 
-initial
-begin
-  file_in = $fopen("data.txt", "r");
-end
-// always @ *
-// if (x_in == 18'sd131071)
-// 	file_in <= $fopen("data.txt","r");
+// initial
+// begin
+//   file_in = $fopen("data.txt", "r");
+// end
+// // always @ *
+// // if (x_in == 18'sd131071)
+// // 	file_in <= $fopen("data.txt","r");
 
-always @ (posedge clk25_4)
-  if (reset)
-    x_in <= 18'sd0;
-  else
-    $fscanf(file_in, "%d\n", x_in);
-
-
+// always @ (posedge clk25_4)
+//   if (reset)
+//     x_in <= 18'sd0;
+//   else
+//     $fscanf(file_in, "%d\n", x_in);
 
 
 
-// always @ (*)
-// case (casecounter)
-// 	5'd1: x_in <= 18'sd131071;
-// 	5'd2: x_in <= 18'sd131071;
-// 	5'd3: x_in <= 18'sd131071;
-// 	5'd4: x_in <= -18'sd131072;
-// 	5'd5: x_in <= -18'sd131072;
-// 	5'd6: x_in <= -18'sd131072;
-// 	5'd7: x_in <= -18'sd131072;
-// 	5'd8: x_in <= 18'sd131071;
-// 	5'd9: x_in <= 18'sd131071;
-// 	5'd10: x_in <= 18'sd131071;
-// 	5'd11: x_in <= 18'sd131071;
-// 	5'd12: x_in <= 18'sd131071;
-// 	5'd13: x_in <= 18'sd131071;
-// 	5'd14: x_in <= 18'sd131071;
-// 	5'd15: x_in <= -18'sd131072;
-// 	5'd16: x_in <= -18'sd131072;
-// 	5'd17: x_in <= -18'sd131072;
-// 	5'd18: x_in <= -18'sd131072;
-// 	5'd19: x_in <= 18'sd131071;
-// 	5'd20: x_in <= 18'sd131071;
-// 	5'd21: x_in <= 18'sd131071;
-// 	default: x_in <= imp;
-// 	endcase
+
+
+always @ (*)
+case (casecounter)
+	5'd1: x_in <= 18'sd131071;
+	5'd2: x_in <= 18'sd131071;
+	5'd3: x_in <= 18'sd131071;
+	5'd4: x_in <= -18'sd131072;
+	5'd5: x_in <= -18'sd131072;
+	5'd6: x_in <= -18'sd131072;
+	5'd7: x_in <= -18'sd131072;
+	5'd8: x_in <= 18'sd131071;
+	5'd9: x_in <= 18'sd131071;
+	5'd10: x_in <= 18'sd131071;
+	5'd11: x_in <= 18'sd131071;
+	5'd12: x_in <= 18'sd131071;
+	5'd13: x_in <= 18'sd131071;
+	5'd14: x_in <= 18'sd131071;
+	5'd15: x_in <= -18'sd131072;
+	5'd16: x_in <= -18'sd131072;
+	5'd17: x_in <= -18'sd131072;
+	5'd18: x_in <= -18'sd131072;
+	5'd19: x_in <= 18'sd131071;
+	5'd20: x_in <= 18'sd131071;
+	5'd21: x_in <= 18'sd131071;
+	default: x_in <= imp;
+	endcase
 
 always @ (posedge clk25_4)
 	if (reset)

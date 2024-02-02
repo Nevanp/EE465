@@ -9,18 +9,19 @@ fc = 1/(2*n_sps);
 %% Transmitter circuit
 df = 1/2000; % frequency increment in cycles/sample
 f = [0:df:0.5-df/2]; % cycles/sample; 0 to almost 1/2
-w = kaiser(21, 2);
-hsrrc_tx = rcosdesign(0.385, span, n_sps).*w';
+w = kaiser(21, 1.67);
+hsrrc_tx = rcosdesign(0.425, span, n_sps).*w';
 H_hat_tx = freqz(hsrrc_tx,1,2*pi*f);
 
 hsrrc_rx = rcosdesign(beta, span, n_sps);
+hsrrc_rx = hsrrc_rx/sum(abs(hsrrc_rx));
 H_hat_rx = freqz(hsrrc_rx,1,2*pi*f);
 % Raised Cosine for comparison
-hrc = conv(hsrrc_rx,hsrrc_rx);
+hrc = conv(hsrrc_tx,hsrrc_rx);
 H_hat_rc = freqz(hrc, 1, 2*pi*f);
 
 x = [(1-2^-17) (1-2^-17) (1-2^-17) -1 -1 -1 -1 (1-2^-17) (1-2^-17) (1-2^-17) (1-2^-17) (1-2^-17) (1-2^-17) (1-2^-17) -1 -1 -1 -1 (1-2^-17) (1-2^-17) (1-2^-17)];
-coef_scaled = hsrrc_tx/0.6846;
+coef_scaled = hsrrc_tx/0.6836;
 coef_verilog = ceil(coef_scaled*2^17);
 a = round(round(conv(x,coef_verilog))/2*(1-2^-17))
 coef_verilog = coef_verilog';
@@ -42,7 +43,7 @@ xlabel('\Omega');
 grid;
 
 figure(3)
-plot(0:40,hrc,'r*', 0:40,conv(hsrrc_tx,hsrrc_rx),'bd', 'MarkerSize',8);
+plot(0:40,hrc,'r*', 0:40,conv(coef_scaled,hsrrc_rx),'bd', 'MarkerSize',8);
 ylabel('h_{rc}[n] and h_{srrc}[n]');
 legend('Ideal','Convolved Tx/Rx');
 xlabel('n');
